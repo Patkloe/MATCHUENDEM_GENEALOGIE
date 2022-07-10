@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Drop-Down Menu</title>
+<!-- jQuery code to help with :hover on iOS devices -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+        if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i))) {
+            $("nav ul li").click(function () {});
+        }
+    });
+  </script>
+<style type="text/css">
+/* To make older browser HTML5 aware */
+    header, nav, aside, article, footer {
+    display: block;
+    }
+footer {
+    position: absolute;
+    margin-top: 610px;
+    width : 450px;
+    margin-left: 300px;
+    /*margin-right: 10px;*/
+    padding-top: 5px;
+    padding-left: 10px;
+    border-top: solid 2px gray;
+  }
+#menu .sousmenu
+
+{
+
+display: none;
+
+position: absolute;
+
+}
+ #menu li:hover > ul
+
+{
+
+display: block;
+
+}
+#menu ul li ul li
+
+{
+
+display: block;
+
+}
+
+</style>
+</head>
+<body>
+<div id="menu">
+
+<ul>
+
+<li><a href="page1.html">Menu 1</a>
+
+<ul class= "sousmenu">
+
+<li><a href="page1a.html">Sous-menu 1a</a></li>
+
+<li><a href="page1b.html">Sous-menu 1b</a></li>
+
+</ul>
+
+</li>
+
+<li><a href="page2.html">Menu 2</a>
+
+<ul class= "sousmenu">
+
+<li><a href="page2a.html">Sous-menu 2a</a></li>
+
+<li><a href="page2b.html">Sous-menu 2b</a></li>
+
+<li><a href="page2c.html">Sous-menu 2c</a></li>
+
+<li><a href="page2d.html">Sous-menu 2d</a></li>
+
+</ul>
+
+</li>
+
+<li><a href="page3.html">Menu 3</a>
+
+<ul class= "sousmenu">
+
+<li><a href="page3a.html">Sous-menu 3a</a></li>
+
+<li><a href="page3b.html">Sous-menu 3b</a></li>
+
+<li><a href="page3c.html">Sous-menu 3c</a></li>
+
+</ul>
+
+</li>
+
+</ul>
+
+</div>
+<footer>
+ © Designed by Patrick using Microsoft technologies
+</footer>
+
+</body>
+</html>
